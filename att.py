@@ -1,22 +1,22 @@
-# for counter in range(10):
-#     for counter1 in range(counter + 1):
-#         print('@', end=' ')
-#     for counter1 in range(10 - counter):
-#         print(' ', end=' ')
-#     for counter1 in range(10 - counter):
-#         print('@', end=' ')
-#     for counter1 in range(counter + 1):
-#         print(' ', end=' ')
-#     for counter1 in range(counter + 1):
-#         print(' ', end=' ')
-#     for counter1 in range(10 - counter):
-#         print('@', end=' ')
-#     for counter1 in range(10 - counter):
-#         print(' ', end=' ')
-#     for counter1 in range(counter + 1):
-#         print('@', end=' ')
-#     print()
-#
+for counter in range(10):
+    for counter1 in range(counter + 1):
+        print('@', end=' ')
+    for counter1 in range(10 - counter):
+        print(' ', end=' ')
+    for counter1 in range(10 - counter):
+        print('@', end=' ')
+    for counter1 in range(counter + 1):
+        print(' ', end=' ')
+    for counter1 in range(counter + 1):
+        print(' ', end=' ')
+    for counter1 in range(10 - counter):
+        print('@', end=' ')
+    for counter1 in range(10 - counter):
+        print(' ', end=' ')
+    for counter1 in range(counter + 1):
+        print('@', end=' ')
+    print()
+
 numbers = [10, 20, 30, 40, 50]
 total = sum(numbers)
 print(total)
@@ -69,14 +69,14 @@ def check_list(x):
 
 def even_number(x):
     new_x = []
-    for number in x:
-        if number % 2 == 0:
+    for number2 in x:
+        if number2 % 2 == 0:
             new_x.append(numbers)
     return new_x
 
 
-result = [i for i in numbers if i % 2 == 0]
-print(result)
+question = [counter2 for counter2 in number if counter2 % 2 == 0]
+print(question)
 print(even_number(numbers))
 print(check_list(numbers))
 
@@ -91,5 +91,5 @@ def reverse_list(x):
 
 print(reverse_list(numbers))
 
-number = [8, 2, 5, 6, 1, 3, 9, 4, 7]
+number4 = [8, 2, 5, 6, 1, 3, 9, 4, 7]
 print(numbers[::-1])

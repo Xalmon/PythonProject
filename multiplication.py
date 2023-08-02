@@ -1,7 +1,9 @@
-# for a in range(1, 13):
-#     for b in range(1, 13):
-#         print(b, 'x', a, '=', b * a, end="\t\t\t\t")
-#     print("\n")
+for a in range(1, 13):
+    for b in range(1, 13):
+        print(b, 'x', a, '=', b * a, end="\t\t\t\t")
+    print("\n")
+
+
 def multiplication_table(number):
     number = int(input("enter a number: "))
 
