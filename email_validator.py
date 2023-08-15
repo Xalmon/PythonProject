@@ -4,7 +4,7 @@ import re
 def validate_email():
     return input("Enter a valid Email: ")
 
-
+]
 def is_email_valid(email):
     return re.match(r'^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$', email)
 

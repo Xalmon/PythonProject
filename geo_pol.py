@@ -1,0 +1,3 @@
+from that_java_enuum_dictionary import find_geopolitical_zone
+
+find_geopolitical_zone()
