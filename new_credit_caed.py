@@ -3,6 +3,7 @@ def main():
 
     card_type = get_card_type(credit_card_number)
     is_valid = is_valid_credit_card_number(credit_card_number)
+    calculate_index(credit_card_number)
 
     print("Credit Card Type:", card_type)
     print("Validity Status:", "Valid" if is_valid else "Invalid")
@@ -33,6 +34,11 @@ def is_valid_credit_card_number(credit_card_number):
         total_sum += digit
         alternate = not alternate
     return total_sum % 10 == 0
+
+
+def calculate_index(credit_card_number):
+    card_length = len(credit_card_number)
+    print("Credit card index:", card_length)
 
 
 if __name__ == "__main__":
