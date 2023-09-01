@@ -14,9 +14,3 @@ def reverse_name(x):
 
 word = "solomon oyefule"
 print(reverse_name(word))
-
-input_string = "oyefule solomon"
-words = input_string.split()
-reversed_words = " ".join(reversed(words))
-
-print(reversed_words)

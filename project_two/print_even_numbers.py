@@ -4,5 +4,6 @@ numbers = [386, 462, 47, 418, 907, 344, 236, 375, 823, 566, 597, 978, 328,
            67, 104, 58, 512, 24, 892, 894, 767, 553, 81, 379,
            843, 831, 445, 742, 717, 958, 743, 527]
 
-answer = [counter for counter in numbers if counter % 2 == 0 and counter <= 248]
+
+answer = [counter for counter in numbers if counter % 2 == 0]
 print(answer)
