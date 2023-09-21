@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/baffb6a9-9733-453c-ad52-02686add69ee/console.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/Dairy_package/new_dairy.py" dialect="GenericSQL" />
+    <file url="PROJECT" dialect="MySQL" />
+  </component>
+</project>
