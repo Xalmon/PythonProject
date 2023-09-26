@@ -1,7 +1,8 @@
 import unittest
+from Receipt_package.receipt import receipt
 
 
-class receipt_test(unittest.TestCase):
+class Test_receipt(unittest.TestCase):
     def test_that_you_can_register(self):
         pass
 

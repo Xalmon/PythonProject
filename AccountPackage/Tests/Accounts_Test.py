@@ -24,7 +24,7 @@ class TestAccount(unittest.TestCase):
         account = Account("Baba", "Solo", "1234")
         sender.deposit(2000)
 
-        recipient = Account("Alice", "Smith", "5678")
+        recipient = Account("Aliala", "Sango", "5678")
         recipient.deposit(1000)
 
         sender.transfer(1000, "1234", "5678")

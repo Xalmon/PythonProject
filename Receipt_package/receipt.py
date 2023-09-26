@@ -60,3 +60,4 @@ while True:
         print("Invalid option. Please choose a valid option.")
 
 connection.close()
+
