@@ -10,12 +10,12 @@ def main():
     current_player = player1
 
     while not board.full_board():
-        board.print_board()
+        board.board()
         move = current_player.make_move()
 
         if board.make_move(move, current_player.symbol):
             if board.check_winner(current_player.symbol):
-                board.print_board()
+                board.board()
                 print(f"{current_player.name} wins!")
                 break
             else:
@@ -24,7 +24,7 @@ def main():
             print("Invalid move. That spot is already taken.")
 
     if not board.check_winner(player1.symbol) and not board.check_winner(player2.symbol):
-        board.print_board()
+        board.board()
         print("It's a tie!")
 
 
