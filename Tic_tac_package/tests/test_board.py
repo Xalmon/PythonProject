@@ -5,7 +5,7 @@ from Tic_tac_package.Board import Board
 class TestBoard(unittest.TestCase):
     def test_that_board_exist_and_init(self):
         board = Board()
-        self.assertEqual(board.board, [" "] * 9)
+        self.assertEqual(board.board_state, [" "] * 9)
 
     def test_if_position_is_empty(self):
         board = Board()
@@ -18,15 +18,7 @@ class TestBoard(unittest.TestCase):
     def test_that_board_is_full(self):
         board = Board()
         self.assertFalse(board.full_board())
-        board.board = ["X"]
-        board.board = ["O"]
-        board.board = ["X"]
-        board.board = ["O"]
-        board.board = ["X"]
-        board.board = ["X"]
-        board.board = ["X"]
-        board.board = ["O"]
-        board.board = ["X"]
+        board.board_state = ["X", "O", "X", "O", "X", "X", "X", "O", "X"]
         self.assertTrue(board.full_board())
 
     def test_that_you_can_make_move(self):
@@ -37,7 +29,11 @@ class TestBoard(unittest.TestCase):
 
     def test_that_you_can_check_winner(self):
         board = Board()
-        board.board = ["X", "X", "X", "O", "O", " ", " ", " ", " "]
+        board.board_state = ["X", "X", "X", "O", "O", " ", " ", " ", " "]
         self.assertTrue(board.check_winner("X"))
-        board.board = ["O", "X", "X", "O", "O", "X", "X", "O", "X"]
+        board.board_state = ["O", "X", "X", "O", "O", "X", "X", "O", "X"]
         self.assertTrue(board.check_winner("X"))
+
+
+if __name__ == '__main__':
+    unittest.main()

@@ -18,8 +18,13 @@ def calculate_menstrual_cycle():
 
     period_start = cycle_start_date
     ovulation_date = cycle_start_date + timedelta(days=(cycle_length // 2))
-    safe_start = cycle_start_date + timedelta(days=(cycle_length - 18))
-    safe_end = cycle_start_date + timedelta(days=(cycle_length - 11))
+
+    if cycle_start_date.day + cycle_length > 28:
+        period_start = cycle_start_date.replace(month=cycle_start_date.month + 1,
+                                                day=(cycle_start_date.day + cycle_length) % 28)
+
+    safe_start = period_start - timedelta(days=18)
+    safe_end = period_start - timedelta(days=11)
 
     print("Below are various information about your cycle")
     print(f"Your next period will start around {period_start.strftime('%B')} {period_start.day}.")
