@@ -2,19 +2,27 @@ from datetime import datetime, timedelta
 
 
 def get_user_input():
-    try:
-        cycle_start = input("Enter the date your last period started (MM-DD): ")
-        cycle_length = int(input("How many days does your period usually last? "))
-        return cycle_start, cycle_length
-    except ValueError:
-        print("Something went wrong. Please check your input format and try again.")
-        return get_user_input()
+    while True:
+        try:
+            cycle_start = input("Enter the date your last period started (MM/DD): ")
+            cycle_length = int(input("How many days does your period usually last? "))
+
+            datetime.strptime(cycle_start, "%m/%d")
+
+            if cycle_length < 0:
+                raise ValueError("Cycle length cannot be negative.")
+
+            return cycle_start, cycle_length
+
+        except ValueError as e:
+            print(f"Invalid input: {e}. Please check your input format and try again.")
+            continue
 
 
 def calculate_menstrual_cycle():
     cycle_start, cycle_length = get_user_input()
 
-    cycle_start_date = datetime.strptime(cycle_start, "%m-%d")
+    cycle_start_date = datetime.strptime(cycle_start, "%m/%d")
 
     period_start = cycle_start_date
     ovulation_date = cycle_start_date + timedelta(days=(cycle_length // 2))
