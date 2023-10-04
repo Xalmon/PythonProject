@@ -35,7 +35,7 @@ def calculate_menstrual_cycle():
     safe_end = period_start - timedelta(days=11)
 
     print("Below are various information about your cycle")
-    print(f"Your next period will start around {period_start.strftime('%B')} {period_start.day}.")
+    print(f"Your period starts around {period_start.day}, Every month.")
     print(f"You'll be most fertile around {ovulation_date.strftime('%B')} {ovulation_date.day}.")
     print(
         f"Your safe days are from {safe_start.strftime('%B')} {safe_start.day} to {safe_end.strftime('%B')} {safe_end.day}.")
