@@ -34,13 +34,6 @@ class TestBoard(unittest.TestCase):
         board.board_state = ["O", "X", "X", "O", "O", "X", "X", "O", "X"]
         self.assertTrue(board.check_winner("X"))
 
-        def test_that_you_can_check_winner(self):
-            board = Board()
-            board.board_state = ["X", "X", "X", "O", "O", " ", " ", " ", " "]
-            self.assertTrue(board.check_winner("X"))
-            board.board_state = ["O", "X", "X", "O", "O", "X", "X", "O", "X"]
-            self.assertTrue(board.check_winner("X"))
-
 
 if __name__ == '__main__':
     unittest.main()

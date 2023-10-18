@@ -20,3 +20,4 @@ class InitialsApp:
 #     full_name = collect_name()
 #     result = app.split_string(full_name)
 #     print(result)
+
