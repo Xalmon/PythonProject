@@ -24,4 +24,5 @@ def is_anagram3(word, word1):
     return True
 
 
-print("anagram tiwi", "=", anagram("madam", "damam"))
+print("anagram d 3'rd", "=", anagram("madam", "damam"))
+
