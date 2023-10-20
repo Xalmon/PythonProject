@@ -1,5 +1,5 @@
-def reverse_name(x):
-    words = x.split()
+def reverse_words(input_str):
+    words = input_str.split()
     reversed_words = []
 
     for reverse in words:
@@ -13,4 +13,8 @@ def reverse_name(x):
 
 
 word = "solomon oyefule"
-print(reverse_name(word))
+word2 = "A better place"
+word3 = "switch off Moyin's phone"
+print(reverse_words(word))
+print(reverse_words(word2))
+print(reverse_words(word3))
