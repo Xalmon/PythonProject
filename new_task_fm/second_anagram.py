@@ -16,3 +16,4 @@ def is_anagram2(first_letter, second_letter):
 
 
 print(is_anagram2("nagaram", "anagram"))
+print(is_anagram2("admam", "madam"))

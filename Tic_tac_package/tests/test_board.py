@@ -13,7 +13,7 @@ class TestBoard(unittest.TestCase):
         self.assertTrue(board.empty_board(4))
         self.assertTrue(board.empty_board(8))
         self.assertTrue(board.empty_board(1))
-        self.assertTrue(board.empty_board(3))
+        self.assertTrue(board.empty_board(2))
 
     def test_that_board_is_full(self):
         board = Board()

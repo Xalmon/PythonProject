@@ -11,6 +11,6 @@ def reverse_list(x):
 
 print(reverse_list(number))
 
-number = [8, 2, 5, 6, 1, 3, 9, 4, 7]
+number = [8, 2, 5, 6, 1, 3, 9, 4, 7, 9]
 print(number[::-1])
 
